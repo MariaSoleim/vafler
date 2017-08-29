@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: bisque;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav a {
+    color: #333;
+    display: inline;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.jumbotron {
+    background: url(https://images.matprat.no/kd5b3y52qa-jumbotron/large) no-repeat center center;
+    background-size: cover;
+    height: 800px;
+}
+
+
+
+.jumbotron h1 {
+    position: relative;
+    top: 180px;
+    text-align: center;
+    color: bisque;
+    font-family: 'Courgette', cursive;
+    font-size: 150px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.section h1 {
+    margin-left: 1%;
+}
+
+h1, h2, p, a, li {
+    font-family: "Raleway", sans-serif;
+    color: #333;
+}
+
+.oppskrifter {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1%;
+}
+
+.recipe img {
+    width: 100%;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.showRecipe {
+    display: flex;
+    background: #EEE;
+    height: 40px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.ingredients, .howto {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 1%;
+}
+
+.ingredients {
+    width: 50%;
+}
+
+.howto {
+    width: 150%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
