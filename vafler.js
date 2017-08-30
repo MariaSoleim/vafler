@@ -19,8 +19,16 @@ window.onload = function(){
     var funfact1 = document.getElementById('funfact1');
     var funfact2 = document.getElementById('funfact2');
     var funfact3 = document.getElementById('funfact3');
+    var funfact4 = document.getElementById('funfact4');
+    var funfact5 = document.getElementById('funfact5');
+    var funfact6 = document.getElementById('funfact6');
+    var funfact7 = document.getElementById('funfact7');
     funfact1.style.display = 'none';
     funfact2.style.display = 'none';
+    funfact4.style.display = 'none';
+    funfact5.style.display = 'none';
+    funfact6.style.display = 'none';
+    funfact7.style.display = 'none';
 
     var left = document.getElementById('left');
     var right = document.getElementById('right');
@@ -90,8 +98,20 @@ window.onload = function(){
         } else if (funfact2.offsetParent !== null) {
             funfact2.style.display = 'none';
             funfact1.style.display = 'flex'
-        } else {
+        } else if (funfact1.offsetParent !== null) {
             funfact1.style.display = 'none';
+            funfact7.style.display = 'flex'
+        } else if (funfact7.offsetParent !== null) {
+            funfact7.style.display = 'none';
+            funfact6.style.display = 'flex'
+        } else if (funfact6.offsetParent !== null) {
+            funfact6.style.display = 'none';
+            funfact5.style.display = 'flex'
+        } else if (funfact5.offsetParent !== null) {
+            funfact5.style.display = 'none';
+            funfact4.style.display = 'flex'
+        } else {
+            funfact4.style.display = 'none';
             funfact3.style.display = 'flex'
         }
     };
@@ -101,13 +121,25 @@ window.onload = function(){
         // hvis conditionen er true, har vi funnet funfacten som vises akkurat nå
         if (funfact3.offsetParent !== null) {
             funfact3.style.display = 'none';
+            funfact4.style.display = 'flex'
+        } else if (funfact4.offsetParent !== null) {
+            funfact4.style.display = 'none';
+            funfact5.style.display = 'flex'
+        } else if (funfact5.offsetParent !== null) {
+            funfact5.style.display = 'none';
+            funfact6.style.display = 'flex'
+        } else if (funfact6.offsetParent !== null) {
+            funfact6.style.display = 'none';
+            funfact7.style.display = 'flex'
+        } else if (funfact7.offsetParent !== null) {
+            funfact7.style.display = 'none';
             funfact1.style.display = 'flex'
-        } else if (funfact2.offsetParent !== null) {
-            funfact2.style.display = 'none';
-            funfact3.style.display = 'flex'
-        } else {
+        } else if (funfact1.offsetParent !== null) {
             funfact1.style.display = 'none';
             funfact2.style.display = 'flex'
+        } else {
+            funfact2.style.display = 'none';
+            funfact3.style.display = 'flex'
         }
     };
 }
