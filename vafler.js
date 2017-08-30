@@ -16,6 +16,15 @@ window.onload = function(){
     var howto2 = document.getElementById('howto2');
     var howto3 = document.getElementById('howto3');
 
+    var funfact1 = document.getElementById('funfact1');
+    var funfact2 = document.getElementById('funfact2');
+    var funfact3 = document.getElementById('funfact3');
+    funfact1.style.display = 'none';
+    funfact2.style.display = 'none';
+
+    var left = document.getElementById('left');
+    var right = document.getElementById('right');
+
     showRecipe1.style.cursor = 'pointer';
     showRecipe2.style.cursor = 'pointer';
     showRecipe3.style.cursor = 'pointer';
@@ -35,9 +44,7 @@ window.onload = function(){
             recipe3.style.display = 'flex';
             showRecipe1.firstElementChild.textContent = 'Se oppskriften >';
         }
-
     };
-
 
     showRecipe2.onclick = function() {
         if (showRecipe2.firstElementChild.textContent === 'Se oppskriften >') {
@@ -55,6 +62,7 @@ window.onload = function(){
             showRecipe2.firstElementChild.textContent = 'Se oppskriften >';
         }
     };
+
     showRecipe3.onclick = function() {
         if (showRecipe3.firstElementChild.textContent === 'Se oppskriften >') {
             recipe1.style.display = "none";
@@ -69,6 +77,37 @@ window.onload = function(){
             recipe1.style.display = 'flex';
             recipe2.style.display = 'flex';
             showRecipe3.firstElementChild.textContent = 'Se oppskriften >';
+        }
+    };
+
+
+    left.onclick = function() {
+        // offsetParent!==null vil si at objektet er synlig
+        // hvis conditionen er true, har vi funnet funfacten som vises akkurat nå
+        if (funfact3.offsetParent !== null) {
+            funfact3.style.display = 'none';
+            funfact2.style.display = 'flex'
+        } else if (funfact2.offsetParent !== null) {
+            funfact2.style.display = 'none';
+            funfact1.style.display = 'flex'
+        } else {
+            funfact1.style.display = 'none';
+            funfact3.style.display = 'flex'
+        }
+    };
+
+    right.onclick = function() {
+        // offsetParent!==null vil si at objektet er synlig
+        // hvis conditionen er true, har vi funnet funfacten som vises akkurat nå
+        if (funfact3.offsetParent !== null) {
+            funfact3.style.display = 'none';
+            funfact1.style.display = 'flex'
+        } else if (funfact2.offsetParent !== null) {
+            funfact2.style.display = 'none';
+            funfact3.style.display = 'flex'
+        } else {
+            funfact1.style.display = 'none';
+            funfact2.style.display = 'flex'
         }
     };
 }

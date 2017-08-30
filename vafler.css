@@ -18,13 +18,15 @@ body {
     display: inline;
     font-family: "Raleway", sans-serif;
     font-size: 24px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .jumbotron {
+    display: flex;
+    justify-content: center;
     background: url(https://images.matprat.no/kd5b3y52qa-jumbotron/large) no-repeat center center;
     background-size: cover;
     height: 800px;
@@ -33,14 +35,11 @@ body {
 
 
 .jumbotron h1 {
-    position: relative;
-    top: 180px;
     text-align: center;
     color: bisque;
     font-family: 'Courgette', cursive;
     font-size: 150px;
-    margin-top: 0;
-    margin-bottom: 80px;
+    margin-top: 150px;
 }
 
 .section {
@@ -97,6 +96,10 @@ h1, h2, p, a, li {
     margin: 0 1%;
 }
 
+.ingredientsText {
+    margin-left: 15%;
+}
+
 .ingredients {
     width: 50%;
 }
@@ -106,7 +109,26 @@ h1, h2, p, a, li {
 }
 
 ul {
-    margin: 0;
+    margin-left: 15%;
     padding: 0;
     list-style-type: none;
+}
+
+.funfacts {
+    display: flex;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.funfacts img {
+    height: 50px;
+    width: 30px;
+}
+
+
+.funfacts h1 {
+    text-align: center;
+    color: bisque;
+    font-family: 'Courgette', cursive;
+    font-size: 60px;
 }
