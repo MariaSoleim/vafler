@@ -4,22 +4,21 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: center;
     background-color: bisque;
 }
 
-.nav {
+.header ul {
     list-style-type: none;
-    padding: 20px 0;
-    text-align: center;
 }
 
-.nav a {
+.header a {
+    display: inline-flex;
     color: #333;
-    display: inline;
     font-family: "Raleway", sans-serif;
     font-size: 24px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 0 40px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -32,10 +31,7 @@ body {
     height: 800px;
 }
 
-
-
 .jumbotron h1 {
-    text-align: center;
     color: bisque;
     font-family: 'Courgette', cursive;
     font-size: 150px;
@@ -57,9 +53,8 @@ h1, h2, p, a, li {
     color: #333;
 }
 
-.oppskrifter {
+.recipes {
     display: flex;
-    flex-direction: row;
 }
 
 .recipe {
@@ -84,7 +79,6 @@ h1, h2, p, a, li {
     background: #EEE;
     height: 40px;
     width: 120px;
-    justify-content: center;
     align-items: center;
     padding: 0 15px;
 }
@@ -108,7 +102,7 @@ h1, h2, p, a, li {
     width: 150%;
 }
 
-ul {
+.ingredients ul {
     margin-left: 15%;
     padding: 0;
     list-style-type: none;

@@ -23,6 +23,7 @@ window.onload = function(){
     var funfact5 = document.getElementById('funfact5');
     var funfact6 = document.getElementById('funfact6');
     var funfact7 = document.getElementById('funfact7');
+
     funfact1.style.display = 'none';
     funfact2.style.display = 'none';
     funfact4.style.display = 'none';
